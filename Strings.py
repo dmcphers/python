@@ -1,19 +1,17 @@
-Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> Drew McPherson
+>>> "Drew McPherson"
 SyntaxError: invalid syntax
 >>> "Drew McPherson"
 'Drew McPherson'
 >>> 'Drew McPherson is awesome!'
 'Drew McPherson is awesome!'
->>> 'I don't think shes 18"
+>>> 'I don't think there is sugar in it"
 SyntaxError: invalid syntax
->>> "I don't think shes 18"
-"I don't think shes 18"
->>> 'She said, "What part of the cow is the meatloaf from?"'
-'She said, "What part of the cow is the meatloaf from?"'
->>> 'I don\'t think shes 18'
-"I don't think shes 18"
+>>> "I don't think there is sugar in it"
+"I don't think there is sugar in it"
+>>> 'He said, "I can see it in the distance."'
+'He said, "I can see it in the distance"'
+>>> 'I don\'t think there is sugar in it'
+"I don't think there is sugar in it"
 >>> print ("hey now brown cow")
 hey now brown cow
 >>> print('c:
@@ -28,8 +26,8 @@ C:\Drew\Desktop\nPics
 >>> firstName = "Drew "
 >>> firstName + "McPherson"
 'Drew McPherson'
->>> firstName + "McLovin"
-'Drew McLovin'
+>>> firstName + "McBrew"
+'Drew McBrew'
 >>> firstName * 5
 'Drew Drew Drew Drew Drew '
 >>> 
