@@ -1,6 +1,6 @@
 import unittest
 
-from strings import concat
+from strings import concat, st_multiply, st_slice, st_length
 
 
 class TestStrings(unittest.TestCase):
@@ -39,6 +39,36 @@ class TestStrings(unittest.TestCase):
         data = ['I don\'t think so']
         result = concat(data)
         self.assertEqual(result, "I don't think so")
+
+    def test_st_newline_char(self):
+        data = ['C:\Drew\Desktop\nPics']
+        result = concat(data)
+        print(result)
+        self.assertEqual(result, "C:\Drew\Desktop" + "\n" + "Pics")
+
+    def test_st_raw(self):
+        data = [r'C:\Drew\Desktop\nPics']
+        result = concat(data)
+        print(result)
+        self.assertEqual(result, r"C:\Drew\Desktop\nPics")
+
+    def test_st_multiply(self):
+        data = "Drew "
+        result = st_multiply(data)
+        print(result)
+        self.assertEqual(result, "Drew Drew Drew Drew Drew ")
+
+    def test_st_slice_string(self):
+        data = "Tuna McFish"
+        result = st_slice(data)
+        print(result)
+        self.assertEqual(result, "Tuna Mc")
+
+    def test_st_length(self):
+        data = "Tuna McFish"
+        result = st_length(data)
+        print(result)
+        self.assertEqual(result, 11)
 
 
 if __name__ == '__main__':
