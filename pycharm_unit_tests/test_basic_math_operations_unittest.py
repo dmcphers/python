@@ -2,7 +2,7 @@ import unittest
 
 
 # Class to handle basic arithmetic operations
-class ArithmeticFunctions():
+class ArithmeticFunctions:
 
 	# Add function
 	def addition(self, a, b):
