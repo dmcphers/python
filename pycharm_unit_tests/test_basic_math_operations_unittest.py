@@ -1,49 +1,48 @@
-import unittest
-
-
 # Class to handle basic arithmetic operations
-class ArithmeticFunctions:
+class BasicMathOperations:
 
-	# Add function
-	def addition(self, a, b):
-		return a + b
+	sum = None
+	product = None
+	quotient = None
+	difference = None
+	x = None
+	y = None
 
-	# Multiply function
-	def multiply(self, a, b):
-		return a * b
+	def __init__(self):
+		pass
 
-	# Divide function
-	def divide(self, a, b):
-		return a / b
+	# Add method
+	def add(self, x, y):
+		self.x = x
+		self.y = y
+		self.sum = self.x + self.y
+		return self.sum
 
-	# Subtract function
-	def subtract(self, a, b):
-		return a - b
+# 	# Multiply method
+	def multiply(self, x, y):
+		self.x = x
+		self.y = y
+		self.product = self.x * self.y
+		return self.product
 
+# 	# Divide function
+	def divide(self, x, y):
+		self.x = x
+		self.y = y
+		self.quotient = self.x / self.y
+		return self.quotient
 
-# Create an object of the ArithmeticFunctions Class
-arithmetic_object = ArithmeticFunctions()
-
-
-# Test class
-class TestBasicOperations(unittest.TestCase):
-
-	# test for addition function
-	def test_addition(self):
-		self.assertTrue(arithmetic_object.addition(2, 3) == 5)
-
-	# test for multiplication
-	def test_multiplication(self):
-		self.assertTrue(arithmetic_object.multiply(3, 3) == 9)
-
-	# test for division
-	def test_division(self):
-		self.assertTrue(arithmetic_object.divide(10, 5) == 2)
-
-	# test for subtraction
-	def test_subtraction(self):
-		self.assertTrue(arithmetic_object.subtract(5, 5) == 0)
+# 	# Subtract function
+	def subtract(self, x, y):
+		self.x = x
+		self.y = y
+		self.difference = self.x - self.y
+		return self.difference
 
 
 if __name__ == '__main__':
-	unittest.main()
+	bmo = BasicMathOperations()
+	print(bmo.add(4,5))
+	print(bmo.multiply(4,5))
+	print(bmo.divide(20,4))
+	print(bmo.subtract(4,5))
