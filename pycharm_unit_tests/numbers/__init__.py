@@ -1,4 +1,4 @@
-def sum(arg):
+def summation(arg):
     total = 0
     for val in arg:
         total += val

@@ -1,6 +1,6 @@
 import unittest
 
-from numbers import sum, prod, diff, quot, quot_large
+from numbers import summation, prod, diff, quot, quot_large
 
 
 class TestNumbers(unittest.TestCase):
