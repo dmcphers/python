@@ -1,3 +1,23 @@
+import unittest
+
+
+class TestBasicMathOperations(unittest.TestCase):
+	def setUp(self):
+		self.bmo = BasicMathOperations()
+
+	def test_add(self):
+		self.assertEqual(self.bmo.add(3, 4), 7)
+
+	def test_subtract(self):
+		self.assertEqual(self.bmo.subtract(4, 3), 1)
+
+	def test_multiply(self):
+		self.assertEqual(self.bmo.multiply(3, 4), 12)
+
+	def test_divide(self):
+		self.assertEqual(self.bmo.divide(20, 4), 5)
+
+
 # Class to handle basic arithmetic operations
 class BasicMathOperations:
 
@@ -41,8 +61,4 @@ class BasicMathOperations:
 
 
 if __name__ == '__main__':
-	bmo = BasicMathOperations()
-	print(bmo.add(4,5))
-	print(bmo.multiply(4,5))
-	print(bmo.divide(20,4))
-	print(bmo.subtract(4,5))
+	unittest.main()
