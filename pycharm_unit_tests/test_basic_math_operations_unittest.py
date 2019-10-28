@@ -59,6 +59,9 @@ class TestBasicMathOperations(unittest.TestCase):
 	def test_add_zero(self):
 		self.assertEqual(self.bmo.add(0, 4), 4)
 
+	# def test_add_null(self):
+	# 	self.assertEqual(self.bmo.add(None, 4), 3)
+
 	# method fails because 2 values are required per the class definition
 	# def test_add_value_missing(self):
 	# 	self.assertEqual(self.bmo.add(3,), 3)
