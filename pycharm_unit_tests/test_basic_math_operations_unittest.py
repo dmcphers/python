@@ -16,25 +16,8 @@ class BasicMathOperations:
 
 	# Add method
 	def add(self, x, y):
-		if x is None and y is None:
-			x = 0;
-			y = 0;
-			print("x and y are None")
-			self.x = x
-			self.y = y
-			self.sum = self.x + self.y
-		if x is None:
-			x = 0
-			print("x is None")
-			self.x = x
-			self.y = y
-			self.sum = self.x + self.y
-		elif y is None:
-			y = 0
-			print("y is None")
-			self.x = x
-			self.y = y
-			self.sum = self.x + self.y
+		if x is None or y is None:
+			return self.sum
 		else:
 			self.x = x
 			self.y = y
@@ -80,7 +63,7 @@ class TestBasicMathOperations(unittest.TestCase):
 		self.assertEqual(self.bmo.add(0, 4), 4)
 
 	def test_add_null(self):
-		self.assertEqual(self.bmo.add(None, None), 0)
+		self.assertEqual(self.bmo.add(3, None), None)
 
 	# method fails because 2 values are required per the class definition
 	# def test_add_value_missing(self):
