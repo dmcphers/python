@@ -82,17 +82,17 @@ class NumericFunctions:
         return self.sqrt_fun
 
     # Random range function
-    def randrangefun(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
-        self.randrange_fun = random.randrange(x, y, z)
-        return self.randrange_fun
+    # def randrangefun(self, x, y, z):
+    #     self.x = x
+    #     self.y = y
+    #     self.z = z
+    #     self.randrange_fun = random.randrange(x, y, z)
+    #     return self.randrange_fun
 
     # Random function
-    def randomfun(self):
-        self.random_fun = random.random()
-        return self.random_fun
+    # def randomfun(self):
+    #     self.random_fun = random.random()
+    #     return self.random_fun
 
     # int() function for coercing to type int
     def intfun(self, x):
@@ -111,10 +111,10 @@ class NumericFunctions:
         return self.bitlength_fun
 
     # type() function for displaying type of object
-    def typefun(self, x):
-        self.x = x
-        self.type_fun = type(x)
-        return self.type_fun
+    # def typefun(self, x):
+    #     self.x = x
+    #     self.type_fun = type(x)
+    #     return self.type_fun
 
 
 class TestNumericFunctions(unittest.TestCase):
@@ -146,11 +146,11 @@ class TestNumericFunctions(unittest.TestCase):
     def test_sqrt(self):
         self.assertEqual(self.numfun.sqrtfun(25), 5)
 
-    def test_randrange(self):
-        print(self.numfun.randrangefun(0, 100, 1))
-
-    def test_random(self):
-        print(self.numfun.randomfun())
+    # def test_randrange(self):
+    #     print(self.numfun.randrangefun(0, 100, 1))
+    #
+    # def test_random(self):
+    #     print(self.numfun.randomfun())
 
     def test_intfun(self):
         self.assertEqual(self.numfun.intfun(23.8), 23)
@@ -161,8 +161,8 @@ class TestNumericFunctions(unittest.TestCase):
     def test_bitlengthfun(self):
         self.assertEqual(self.numfun.bitlengthfun(7), 3)
 
-    def test_type(self):
-        print(self.numfun.typefun('Hello'))
+    # def test_type(self):
+    #     print(self.numfun.typefun('Hello'))
 
 
 if __name__ == '__main__':
