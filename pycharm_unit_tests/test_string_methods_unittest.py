@@ -93,11 +93,6 @@ class StringMethods:
         self.a = a
         return a.lower()
 
-    # lstrip method
-    def lstrip(self, a):
-        self.a = a
-        return a.lstrip(), "is where I was born"
-
     # partition method
     def partition(self, a):
         self.a = a
@@ -128,8 +123,7 @@ class StringMethods:
         myrsplit = a.rsplit(", ")
         return myrsplit
 
-        # rsplit method
-
+    # split method
     def split(self, a):
         self.a = a
         mysplit = a.split()
@@ -149,11 +143,6 @@ class StringMethods:
     def strip(self, a):
         self.a = a
         return a.strip()
-
-    # swapcase method
-    def swapcase(self, a):
-        self.a = a
-        return a.swapcase()
 
     # title method
     def title(self, a):
