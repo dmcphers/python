@@ -159,6 +159,11 @@ class StringMethods:
         self.a = a
         return a.zfill(8)
 
+    def append(self, x):
+        testList = ['test']
+        testList.append((x))
+        return "".join(testList)
+
 
 class TestStringMethods(unittest.TestCase):
     def setUp(self):
@@ -249,6 +254,9 @@ class TestStringMethods(unittest.TestCase):
 
     def test_st_zfill(self):
         self.assertEqual(self.tsm.zfill("50"), "00000050")
+
+    def test_st_append(self):
+        self.assertEqual(self.tsm.append("Append"), "testAppend")
 
 
 if __name__ == '__main__':

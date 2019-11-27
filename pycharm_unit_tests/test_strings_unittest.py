@@ -26,6 +26,10 @@ class StringTests:
         st_len = len(x)
         return st_len
 
+    def st_reverse(self, x):
+        st_rev = x[::-1]
+        return st_rev
+
 
 class TestStrings(unittest.TestCase):
 
@@ -52,6 +56,9 @@ class TestStrings(unittest.TestCase):
 
     def test_st_length(self):
         self.assertEqual(self.st_test.st_length("Tuna McFish"), 11)
+
+    def test_st_reverse(self):
+        self.assertEqual(self.st_test.st_reverse("Tuna McFish"), "hsiFcM anuT")
 
 
 if __name__ == '__main__':

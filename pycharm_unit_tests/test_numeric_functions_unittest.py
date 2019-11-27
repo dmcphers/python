@@ -111,9 +111,9 @@ class NumericFunctions:
         return self.bitlength_fun
 
     # type() function for displaying type of object
-    # def typefun(self, x):
+    # def typefun(self, x, y):
     #     self.x = x
-    #     self.type_fun = type(x)
+    #     self.type_fun = isinstance(x, y)
     #     return self.type_fun
 
 
@@ -162,7 +162,8 @@ class TestNumericFunctions(unittest.TestCase):
         self.assertEqual(self.numfun.bitlengthfun(7), 3)
 
     # def test_type(self):
-    #     print(self.numfun.typefun('Hello'))
+    #     string = 'hello'
+    #     self.assertIsInstance(self.numfun.typefun(string, str))
 
 
 if __name__ == '__main__':
